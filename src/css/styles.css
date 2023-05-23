@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-size: 16px;
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .container, html .container {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+body .container .display, html .container .display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .container .display span, html .container .display span {
+  font-size: 6rem;
+  margin: 5px;
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+}
+body .container .hour, body .container .minutes, body .container .seconds, body .container .miliseconds, html .container .hour, html .container .minutes, html .container .seconds, html .container .miliseconds {
+  background-color: gold;
+}
+body .container .sectionButtons, html .container .sectionButtons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+body .container .sectionButtons button, html .container .sectionButtons button {
+  padding: 20px 40px;
+  background-color: white;
+  border: none;
+  outline-offset: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+body .container .sectionButtons .start, html .container .sectionButtons .start {
+  background-color: rgb(42, 192, 65);
+}
+body .container .sectionButtons .stop, html .container .sectionButtons .stop {
+  background-color: rgb(192, 42, 42);
+}
+body .container .sectionButtons .restart, html .container .sectionButtons .restart {
+  background-color: rgb(42, 117, 192);
+}
+
+/*# sourceMappingURL=styles.css.map */
