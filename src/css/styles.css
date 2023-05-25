@@ -52,6 +52,13 @@ body .container .sectionButtons button, html .container .sectionButtons button {
   outline-offset: none;
   border-radius: 10px;
   cursor: pointer;
+  -webkit-box-shadow: 10px 11px 23px -1px rgba(140, 140, 140, 0.91);
+  -moz-box-shadow: 10px 11px 23px -1px rgba(140, 140, 140, 0.91);
+  box-shadow: 2px 3px 10px -1px rgba(94, 94, 94, 0.91);
+  color: white;
+}
+body .container .sectionButtons button:hover, html .container .sectionButtons button:hover {
+  opacity: 0.7;
 }
 body .container .sectionButtons .start, html .container .sectionButtons .start {
   background-color: rgb(42, 192, 65);
@@ -64,7 +71,7 @@ body .container .sectionButtons .stop, html .container .sectionButtons .stop {
   background-color: rgb(192, 42, 42);
 }
 body .container .sectionButtons .restart, html .container .sectionButtons .restart {
-  background-color: rgb(250, 250, 250);
+  background-color: rgb(31, 189, 213);
 }
 body .container .times, html .container .times {
   color: white;
