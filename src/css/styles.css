@@ -26,10 +26,11 @@ body .container .display, html .container .display {
   align-items: center;
   color: white;
   font-size: 3rem;
+  border: 1px solid;
 }
 body .container .display span, html .container .display span {
-  font-size: 6rem;
-  margin: 10px;
+  font-size: 1.2rem;
+  margin: 5px;
   padding: 15px 20px;
   border-radius: 10px;
   color: white;
@@ -40,21 +41,25 @@ body .container .hour, body .container .minutes, body .container .seconds, body 
 body .container .sectionButtons, html .container .sectionButtons {
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  width: 70%;
+  width: 90%;
+  border: 1px solid;
   color: white;
+  height: 40%;
 }
 body .container .sectionButtons button, html .container .sectionButtons button {
-  padding: 20px 40px;
-  background-color: white;
+  flex: 1 1 100px;
+  padding: 20px 10px;
   border: none;
   outline-offset: none;
   border-radius: 10px;
   cursor: pointer;
-  -webkit-box-shadow: 10px 11px 23px -1px rgba(140, 140, 140, 0.91);
-  -moz-box-shadow: 10px 11px 23px -1px rgba(140, 140, 140, 0.91);
+  box-sizing: border-box;
   box-shadow: 2px 3px 10px -1px rgba(94, 94, 94, 0.91);
+  -webkit-box-shadow: 2px 3px 10px -1px rgba(140, 140, 140, 0.91);
+  -moz-box-shadow: 2px 3px 10px -1px rgba(140, 140, 140, 0.91);
   color: white;
 }
 body .container .sectionButtons button:hover, html .container .sectionButtons button:hover {
@@ -65,7 +70,6 @@ body .container .sectionButtons .start, html .container .sectionButtons .start {
 }
 body .container .sectionButtons .writeDown, html .container .sectionButtons .writeDown {
   background-color: rgb(42, 117, 192);
-  padding: 20px 30px;
 }
 body .container .sectionButtons .stop, html .container .sectionButtons .stop {
   background-color: rgb(192, 42, 42);

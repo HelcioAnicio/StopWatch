@@ -1,36 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>StopWatch</title>
 
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
     <div class="container">
+      <section class="display">
+        <span class="hour"></span>: <span class="minutes"></span>:
+        <span class="seconds"></span>:
+        <span class="miliseconds"></span>
+      </section>
 
-        <section class="display">
-            <span class="hour"></span>:
-            <span class="minutes"></span>:
-            <span class="seconds"></span>:
-            <span class="miliseconds"></span>
-        </section>
+      <section class="sectionButtons">
+        <button class="start">Start</button>
+        <button class="writeDown">WriteDown</button>
+        <button class="stop">Stop</button>
+        <button class="restart">Restart</button>
+      </section>
 
-        <section class="sectionButtons">
-            <button class="start">Start</button>
-            <button class="writeDown">Write Down</button>
-            <button class="stop">Stop</button>
-            <button class="restart">Restart</button>
-        </section>
-
-        <div class="times"></div>
-
+      <div class="times"></div>
     </div>
 
-
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
