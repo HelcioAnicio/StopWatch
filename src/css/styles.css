@@ -6,7 +6,7 @@
 
 body, html {
   font-size: 16px;
-  background-color: black;
+  background-color: gray;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -25,14 +25,13 @@ body .container .display, html .container .display {
   justify-content: center;
   align-items: center;
   color: white;
-  font-size: 3rem;
-  border: 1px solid;
+  font-size: 1rem;
 }
 body .container .display span, html .container .display span {
-  font-size: 1.2rem;
+  font-size: 2.5rem;
   margin: 5px;
-  padding: 15px 20px;
-  border-radius: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
   color: white;
 }
 body .container .hour, body .container .minutes, body .container .seconds, body .container .miliseconds, html .container .hour, html .container .minutes, html .container .seconds, html .container .miliseconds {
@@ -45,21 +44,22 @@ body .container .sectionButtons, html .container .sectionButtons {
   justify-content: space-evenly;
   align-items: center;
   width: 90%;
-  border: 1px solid;
   color: white;
   height: 40%;
 }
 body .container .sectionButtons button, html .container .sectionButtons button {
+  font-size: 1rem;
   flex: 1 1 100px;
-  padding: 20px 10px;
+  padding: 10px 5px;
+  margin-right: 10px;
   border: none;
   outline-offset: none;
-  border-radius: 10px;
+  border-radius: 5px;
   cursor: pointer;
   box-sizing: border-box;
-  box-shadow: 2px 3px 10px -1px rgba(94, 94, 94, 0.91);
-  -webkit-box-shadow: 2px 3px 10px -1px rgba(140, 140, 140, 0.91);
-  -moz-box-shadow: 2px 3px 10px -1px rgba(140, 140, 140, 0.91);
+  box-shadow: 3px 3px 2px -1px rgba(0, 0, 0, 0.91);
+  -webkit-box-shadow: 3px 3px 2px -1px rgba(0, 0, 0, 0.91);
+  -moz-box-shadow: 3px 3px 2px -1px rgba(0, 0, 0, 0.91);
   color: white;
 }
 body .container .sectionButtons button:hover, html .container .sectionButtons button:hover {
@@ -80,6 +80,31 @@ body .container .sectionButtons .restart, html .container .sectionButtons .resta
 body .container .times, html .container .times {
   color: white;
   font-size: 1.5rem;
+}
+
+@media screen and (min-width: 414px) and (min-height: 736px) {
+  body, html {
+    font-size: 23px;
+  }
+}
+@media screen and (min-width: 760px) and (min-height: 1000px) {
+  body, html {
+    font-size: 35px;
+  }
+  body .container .display span, html .container .display span {
+    padding: 10px 15px;
+  }
+  body .container .sectionButtons button, html .container .sectionButtons button {
+    padding: 20px 15px;
+    box-shadow: 3px 5px 3px 0px rgba(0, 0, 0, 0.91);
+    -webkit-box-shadow: 3px 5px 3px 0px rgba(0, 0, 0, 0.91);
+    -moz-box-shadow: 3px 5px 3px 0px rgba(0, 0, 0, 0.91);
+  }
+}
+@media screen and (min-width: 1200px) and (min-height: 630px) {
+  body, html {
+    font-size: 40px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
